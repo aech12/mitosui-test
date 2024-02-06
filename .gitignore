@@ -1,0 +1,47 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore mitosis specific files and folders
+mitosis/.nyc_output/
+mitosis/coverage/
+mitosis/dist/
+mitosis/node_modules/
+
+# Ignore common build artifacts
+build/
+coverage/
+dist/
+public/
+
+# Ignore VS Code files
+.vscode/
+
+# Ignore IDE specific files
+# Replace <IDE> with your specific IDE (e.g. WebStorm, PyCharm)
+<IDE>/*
+
+# Ignore temporary files
+tmp/
+*.log
+*.pid
+*.sock
+
+# Ignore test output
+*.dump
+*.prof
+
+# Ignore any local configurations
+.env.local
+.env.development
+.env.production
+
+# Ignore generated files
+**/generated/
+
+# Ignore mitosis cache
+mitosis/.cache/
+
+# Ignore mitosis specific configurations
+mitosis.config.js
+
+# Optional: ignore any additional files or folders as needed
