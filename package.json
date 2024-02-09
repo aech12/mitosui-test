@@ -1,22 +1,27 @@
 {
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "compile-mitosis-components": "exec mitosis build"
   },
   "devDependencies": {
     "@builder.io/eslint-plugin-mitosis": "^0.0.15",
-    "@storybook/addon-essentials": "^7.6.12",
-    "@storybook/addon-interactions": "^7.6.12",
-    "@storybook/addon-links": "^7.6.12",
+    "@chromatic-com/storybook": "^1.1.5",
+    "@storybook/addon-essentials": "^8.0.0-beta.1",
+    "@storybook/addon-interactions": "^8.0.0-beta.1",
+    "@storybook/addon-links": "^8.0.0-beta.1",
     "@storybook/addon-onboarding": "^1.0.11",
-    "@storybook/blocks": "^7.6.12",
-    "@storybook/react": "^7.6.12",
-    "@storybook/react-webpack5": "^7.6.12",
-    "@storybook/test": "^7.6.12",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.0",
+    "@storybook/blocks": "^8.0.0-beta.1",
+    "@storybook/react": "^8.0.0-beta.1",
+    "@storybook/react-webpack5": "^8.0.0-beta.1",
+    "@storybook/test": "^8.0.0-beta.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "postcss": "^8.4.35",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.6.12"
+    "storybook": "^8.0.0-beta.1",
+    "tailwindcss": "^3.4.1"
   },
   "dependencies": {
     "@builder.io/mitosis": "^0.0.145",
