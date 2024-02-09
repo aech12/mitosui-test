@@ -1,16 +1,13 @@
 "use client";
-import * as React from "react";
 import { useState } from "react";
 
-function MyBasicComponent(props) {
+export default function MyComponent(props) {
   const [name, setName] = useState(() => "Foo");
 
   return (
-    <div>
+    <div className="bg-red-500">
       {props.message || "Hello"}
       {name}! I can run in React, Vue, Solid or Svelte!
     </div>
   );
 }
-
-export default MyBasicComponent;

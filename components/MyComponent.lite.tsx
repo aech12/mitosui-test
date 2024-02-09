@@ -4,7 +4,7 @@ type Props = {
   message: string;
 };
 
-export default function MyBasicComponent(props: Props) {
+export default function MyComponent(props: Props) {
   const state = useStore({
     name: "Foo",
   });
