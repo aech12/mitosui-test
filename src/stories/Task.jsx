@@ -6,7 +6,7 @@ export default function Task({
   onPinTask,
 }) {
   return (
-    <div className="list-item">
+    <div className="list-item bg-red-400">
       <label htmlFor="title" aria-label={title}>
         <input type="text" value={title} readOnly={true} name="title" />
       </label>
