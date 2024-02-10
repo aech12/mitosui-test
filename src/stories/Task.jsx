@@ -10,6 +10,7 @@ export default function Task({
       <label htmlFor="title" aria-label={title}>
         <input type="text" value={title} readOnly={true} name="title" />
       </label>
+      <input className="p-10" type="text" value={title} readOnly={true} name="title" />
     </div>
   );
 }
