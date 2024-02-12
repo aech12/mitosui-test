@@ -26,6 +26,11 @@
   },
   "dependencies": {
     "@builder.io/mitosis": "^0.0.145",
-    "@builder.io/mitosis-cli": "^0.0.145"
+    "@builder.io/mitosis-cli": "^0.0.145",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.330.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
