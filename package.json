@@ -2,7 +2,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "compile-mitosis-components": "exec mitosis build",
+    "compile-mitosis": "exec mitosis build",
+    "compile-mitosis-comp": "exec mitosis compile --to=react component.lite.jsx > output/component.jsx",
     "compile-tailwind": "npx tailwindcss -i ./src/tailwind-input.css -o ./src/tailwindcss"
   },
   "devDependencies": {
