@@ -1,9 +1,8 @@
-import { useStore } from "@builder.io/mitosis";
-import { cva, type VariantProps } from "class-variance-authority"
+import { cva, type VariantProps } from "class-variance-authority";
+// import { twMerge } from 'tailwind-merge';
+import { cn } from "../lib/utils";
 
-import { cn } from "../lib/utils"
-
-// cva 
+// cva
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
@@ -31,26 +30,23 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
-// props
+// types
+interface ButtonVariants extends VariantProps<typeof buttonVariants> {}
+
 type Props = {
-  message: string;
-  variant: VariantProps<typeof buttonVariants>["variant"];
-  size: VariantProps<typeof buttonVariants>["size"];
   className: string;
+  variant?: ButtonVariants["variant"];
+  size?: ButtonVariants["size"];
 };
 
 // component
-export default function MyComponent(props: Props) {
-  const state = useStore({
-    name: "Foo",
-  });
-
+export default function Button({ variant, size, className, ...props }: Props) {
   return (
-    <div>
-      {props.message || "Hello"} {state.name}! I run in React, Vue, Solid or
-      Svelte!
-    </div>
+    <button
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    />
   );
 }
