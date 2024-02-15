@@ -1,5 +1,5 @@
 import { useStore } from "@builder.io/mitosis";
-import { cn } from "../src/lib/utils"
+import { cn } from "../lib/utils"
 
 type Props = {
   message: string;
@@ -7,7 +7,7 @@ type Props = {
   className: string;
 };
 
-export default function MyComponent(props: Props) {
+export default function Input(props: Props) {
   const state = useStore({
     name: "Foo",
   });

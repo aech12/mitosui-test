@@ -2,8 +2,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "compile-mitosis": "exec mitosis build",
-    "compile-mitosis-comp": "exec mitosis compile --to=react component.lite.jsx > output/component.jsx",
+    "build-mitosis": "exec mitosis build",
+    "compile-mitosis-comp": "exec mitosis compile -t react component.lite.jsx > output/component.jsx",
     "compile-tailwind": "npx tailwindcss -i ./src/tailwind-input.css -o ./src/tailwindcss"
   },
   "devDependencies": {
@@ -28,6 +28,7 @@
   "dependencies": {
     "@builder.io/mitosis": "^0.0.145",
     "@builder.io/mitosis-cli": "^0.0.145",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-menubar": "^1.0.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

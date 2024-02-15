@@ -1,9 +1,9 @@
 "use client";
 import * as React from "react";
 import { useState } from "react";
-import { cn } from "../src/lib/utils";
+import { cn } from "../lib/utils";
 
-function MyComponent(props) {
+function Input(props) {
   const [name, setName] = useState(() => "Foo");
 
   return (
@@ -18,4 +18,4 @@ function MyComponent(props) {
   );
 }
 
-export default MyComponent;
+export default Input;
