@@ -1,4 +1,3 @@
-"use client";
 import * as React from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "../lib/utils";
@@ -37,16 +36,14 @@ const buttonVariants = cva(
 // component
 
 function Button(props) {
-  const state = useLocalProxy({ name: "Foo" });
-
   return (
     <button
       {...props}
       className={cn(
         buttonVariants({
-          variant,
-          size,
-          className,
+          variant: props.variant,
+          size: props.size,
+          className: props.className,
         })
       )}
     />

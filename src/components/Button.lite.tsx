@@ -1,5 +1,4 @@
 import { cva, type VariantProps } from "class-variance-authority";
-// import { twMerge } from 'tailwind-merge';
 import { cn } from "../lib/utils";
 
 // cva
@@ -35,17 +34,26 @@ const buttonVariants = cva(
 // types
 interface ButtonVariants extends VariantProps<typeof buttonVariants> {}
 
-type Props = {
-  className: string;
+export interface ButtonProps {
+  className?: string;
   variant?: ButtonVariants["variant"];
   size?: ButtonVariants["size"];
-};
+  asChild?: boolean;
+}
 
 // component
-export default function Button({ variant, size, className, ...props }: Props) {
+export default function Button(props: ButtonProps) {
+  const Comp = props.asChild ? Slot : "button";
+
   return (
     <button
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        buttonVariants({
+          variant: props.variant,
+          size: props.size,
+          className: props.className,
+        })
+      )}
       {...props}
     />
   );

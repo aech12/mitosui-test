@@ -45,3 +45,4 @@ mitosis/.cache/
 mitosis.config.js
 
 # Optional: ignore any additional files or folders as needed
+storybook-static

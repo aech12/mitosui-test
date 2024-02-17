@@ -20,6 +20,7 @@
     "@storybook/test": "^8.0.0-beta.1",
     "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "postcss": "^8.4.35",
     "prop-types": "^15.8.1",
     "storybook": "^8.0.0-beta.1",
@@ -28,8 +29,7 @@
   "dependencies": {
     "@builder.io/mitosis": "^0.0.145",
     "@builder.io/mitosis-cli": "^0.0.145",
-    "@radix-ui/react-accordion": "^1.1.2",
-    "@radix-ui/react-menubar": "^1.0.4",
+    "@storybook/auto-config": "^0.0.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.330.0",
