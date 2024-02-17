@@ -2,7 +2,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "compile-mitosis-components": "exec mitosis build",
+    "build-mitosis": "exec mitosis build",
+    "compile-mitosis-comp": "exec mitosis compile -t react src/components/$1 -o=output/$1",
     "compile-tailwind": "npx tailwindcss -i ./src/tailwind-input.css -o ./src/tailwindcss"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "@storybook/test": "^8.0.0-beta.1",
     "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "postcss": "^8.4.35",
     "prop-types": "^15.8.1",
     "storybook": "^8.0.0-beta.1",
@@ -26,6 +28,12 @@
   },
   "dependencies": {
     "@builder.io/mitosis": "^0.0.145",
-    "@builder.io/mitosis-cli": "^0.0.145"
+    "@builder.io/mitosis-cli": "^0.0.145",
+    "@storybook/auto-config": "^0.0.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.330.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
