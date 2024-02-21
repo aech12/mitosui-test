@@ -1,14 +1,10 @@
-"use client";
 import * as React from "react";
 import { cn } from "../lib/utils";
 
 function Input(props) {
-  const state = useLocalProxy({ inputValue: "" });
-
   return (
     <input
-      value={state.inputValue}
-      onChange={(event) => (state.inputValue = event.target.value)}
+      value={props.value}
       type={props.type}
       {...props}
       className={cn(
