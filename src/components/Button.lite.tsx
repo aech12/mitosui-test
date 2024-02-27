@@ -43,7 +43,7 @@ export interface ButtonProps {
 
 // component
 export default function Button(props: ButtonProps) {
-  const Comp = props.asChild ? Slot : "button";
+  // const Comp = props.asChild ? Slot : "button";
 
   return (
     <button
